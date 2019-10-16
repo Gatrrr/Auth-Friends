@@ -13,12 +13,8 @@ function App() {
         <div>
           <Link to="/login">Login</Link>
         </div>
-        <div>
-          <Link to="/protected">Friends</Link>
-        </div>
         <Switch>
           <Route path="/login" component={Login} />
-          <Route component={Login} />
           <PrivateRoute exact path="/protected" component={MyFriends} />
         </Switch>
       </div>
